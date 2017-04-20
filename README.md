@@ -11,6 +11,18 @@ Summary: Microsoft Azure Storage Client Library for Python
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/azure-storage-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/azure-storage-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/azure-storage-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/azure-storage-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/azure-storage-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/azure-storage-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/azure-storage/badges/version.svg)](https://anaconda.org/conda-forge/azure-storage)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/azure-storage/badges/downloads.svg)](https://anaconda.org/conda-forge/azure-storage)
+
 Installing azure-storage
 ========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `azure-storage` available on your 
 ```
 conda search azure-storage --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/azure-storage-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/azure-storage-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/azure-storage-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/azure-storage-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/azure-storage-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/azure-storage-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/azure-storage/badges/version.svg)](https://anaconda.org/conda-forge/azure-storage)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/azure-storage/badges/downloads.svg)](https://anaconda.org/conda-forge/azure-storage)
 
 
 Updating azure-storage-feedstock
