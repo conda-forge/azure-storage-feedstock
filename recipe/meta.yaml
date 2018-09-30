@@ -1,31 +1,26 @@
-{% set version = "0.32.0" %}
+{% set version = "0.36.0" %}
+{% set name = "azure-storage" %}
 
 package:
-  name: azure-storage
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: azure-storage-{{ version }}.zip
-  url: https://pypi.io/packages/source/a/azure-storage/azure-storage-{{ version }}.zip
-  sha256: 1556234b02c92143d4db789475e9a8531986348b99de52be474bbaed820432ef
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: fb6212dcbed91b49d9637aa5e8888eafdfcd523b7e560c8044d2d838bbd3ca5f
 
 build:
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   number: 0
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
-    - azure-nspkg
-    - azure-common
-    - python-dateutil
-    - requests
-    - futures  # [py2k]
+    - pip
   run:
     - python
-    - azure-nspkg
-    - azure-common
+    - azure-common >=1.1.5
     - python-dateutil
     - requests
     - futures  # [py2k]
