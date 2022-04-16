@@ -1,16 +1,16 @@
-{% set version = "0.36.0" %}
+{% set version = "0.37.0" %}
 
 package:
   name: azure-storage
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/azure-storage/azure-storage-{{ version }}.tar.gz
-  sha256: fb6212dcbed91b49d9637aa5e8888eafdfcd523b7e560c8044d2d838bbd3ca5f
+  url: https://pypi.io/packages/source/a/azure-storage/azure-storage-{{ version }}.zip
+  sha256: 8c7b0e3867385172013aa396bc8d661145c029ede6515a467f299e020584bcea
 
 build:
-  number: 1003
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -44,7 +44,7 @@ about:
   home: https://github.com/Azure/azure-storage-python
   license: Apache-2.0
   license_file: LICENSE.txt
-  summary: 'Microsoft Azure Storage Client Library for Python'
+  summary: Microsoft Azure Storage Client Library for Python
 
 extra:
   recipe-maintainers:
