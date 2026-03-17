@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/azure-storage/azure-storage-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/a/azure-storage/azure-storage-{{ version }}.tar.gz
   sha256: fb6212dcbed91b49d9637aa5e8888eafdfcd523b7e560c8044d2d838bbd3ca5f
 
 build:
-  number: 1004
+  number: 1005
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
